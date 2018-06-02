@@ -1,8 +1,8 @@
 <!--NAVBAR-->
-<nav class="navbar navbar-expand-md navbar-light bg_lgray">
+<nav class="navbar navbar-expand-md navbar-light bg-success">
   <div class="container">
     <a class="navbar-brand text-secondary" href="#">
-      <p class="h4 d-none d-md-inline-block">Arborizate</p>
+      <p class="h4 d-none d-md-inline-block text-white">Arborizate</p>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
       <span class="navbar-toggler-icon mb-0"></span> 
@@ -11,24 +11,114 @@
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="btn btn-light mr-2" href="#" role="button">Impacto</a>
+          <a class="btn btn-link text-white mr-2" href="#" role="button">Impacto</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-light mr-2" href="/root" role="button">¿Cómo funciona?</a>
+          <a class="btn btn-link text-white mr-2" href="/root" role="button">¿Cómo funciona?</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-success mr-2" href="/root" role="button">Iniciar Sesión</a>
+          <a class="btn btn-outline-light mr-2" href="/root" role="button">Iniciar Sesión</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-success mr-2" href="/root" role="button">Registrarse</a>
+          <a class="btn btn-warning mr-2" href="/root" role="button">Registrarse</a>
         </li>
       </ul>
     </div>
   </div>
 </nav><!--END NAVBAR-->
+<!--JUMBOTRON-->
+<div class="jumbotron jumbotron-fluid bg-success text-center mb-0" id="head">
+  <div class="container">
+    <h1 class="display-4 text-white">Siembra un árbol <br>y comparte tu aporte <br>con el mundo</h1>
+    <br>
+    <p class="lead text-white">Arborizate es la aplicación web que te invita a registrar y compartir <br>tus siembras con todo el mundo. Reforesta, comparte y participa </p>
+    <br>
+    <br>
 
-<div class="container-fluid">
-  <div class="row" id="home">
-    <div class="col"></div>
+    <button type="button" class="btn btn-light btn-lg mr-2 w-25">Conoce más</button>
+    <button type="button" class="btn btn-warning btn-lg ml-2 w-25">Participa</button>
+
+  </div>  
+</div><!--END JUMBOTRON-->
+
+<div class="container">
+  <div class="row" id="stats">
+    <div class="col-12 text-center m-3 text-secondary">
+      <h2 class="h1 mt-5">Así estamos creciendo</h2>
+      <br>
+      <p class="h5">Conoce nuestro impacto</p>
+    </div>
+
+    <div class="col-3 ml-auto">
+      <div class="card border-0">
+        <div class="card-body">
+          <h5 class="card-title display-4 text-center text-secondary">1.250</h5>
+          <h6 class="card-subtitle mb-2 text-muted text-center h5">Sembradores <br>registrados</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card border-0">
+        <div class="card-body">
+          <h5 class="card-title display-4 text-center text-secondary">2.560</h5>
+          <h6 class="card-subtitle mb-2 text-muted text-center h5">Árboles <br>sembrados</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mr-auto">
+      <div class="card border-0">
+        <div class="card-body">
+          <h5 class="card-title display-4 text-center text-secondary">13.150</h5>
+          <h6 class="card-subtitle mb-2 text-muted text-center h5">KG de CO2 <br>reducidos al año</h6>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="row" id="map">
+    <div class="col-10 mx-auto m-5">
+      <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/1/19/BlankMap-World-1990.png">
+    </div>
+  </div>
+
+  <div class="row" id="how">
+    <div class="col-12 text-center m-3 text-secondary">
+      <h2 class="h1 mt-5">¿Cómo funciona?</h2>
+      <br>
+      <p class="h5">Estamos haciendo única la experiencia de ayudar al medio ambiente <br>y sembrando semillas de conciencia en todo el mundo</p>
+    </div>
+  </div>
+
+    <div class="row text-center mt-5 mb-5" id="features">
+    <!--FEATURE 1-->
+    <div class="col-12 col-md-6 col-lg-3 ml-auto">
+      <div class="card border-white p-1">
+        <div class="card-body">
+          <img class="img-fluid mb-3" src="<%= asset_path('Siembra_Img.png') %>" alt="feature 5">
+          <h5 class="card-title h2">Siembra</h5>
+          <p class="card-text">Planta un árbol en donde más se necesite.</p>
+        </div>
+      </div>
+    </div><!-- END FEATURE 1-->
+    <!--FEATURE 2-->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card border-white p-1">
+        <div class="card-body">
+          <img class="img-fluid mb-3" src="<%= asset_path('Ingresa_Img.png') %>" alt="feature 1">
+          <h5 class="card-title h2">Ingresa</h5>
+          <p class="card-text">Entra a tu cuenta de Arborizate, y si no tienes una registrate aquí.</p>
+        </div>
+      </div>
+    </div><!-- END FEATURE 2-->
+    <!--FEATURE 3-->
+    <div class="col-12 col-md-6 col-lg-3 mr-auto">
+      <div class="card border-white p-1">
+        <div class="card-body">
+          <img class="img-fluid mb-3" src="<%= asset_path('Comparte_Img.png') %>" alt="feature 3">
+          <h5 class="card-title h2">Comparte</h5>
+          <p class="card-text">Registra tu siembra en tu perfil y compartela con el mundo.</p>
+        </div>
+      </div>
+    </div><!-- END FEATURE 3-->
+  </div><!--END FEATURES-->
 </div>
