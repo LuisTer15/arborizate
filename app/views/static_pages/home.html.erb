@@ -1,8 +1,9 @@
 <!--NAVBAR-->
-<nav class="navbar navbar-expand-md navbar-light bg-success">
+<nav class="navbar navbar-expand-md navbar-light fixed-top" id="nav">
   <div class="container">
     <a class="navbar-brand text-secondary" href="#">
-      <p class="h4 d-none d-md-inline-block text-white">Arborizate</p>
+      <img src="<%= asset_path('logo_white.png') %>" class="img-fluid" alt="Logo">
+      <p class="h4 d-md-inline-block text-white ml-2" >Arborizate</p>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
       <span class="navbar-toggler-icon mb-0"></span> 
@@ -11,16 +12,16 @@
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="btn btn-link text-white mr-2" href="#" role="button">Impacto</a>
+          <a class="btn btn-link text-white mr-2" href="#stats" role="button">Impacto</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-link text-white mr-2" href="/root" role="button">¿Cómo funciona?</a>
+          <a class="btn btn-link text-white mr-2" href="#how_to_head" role="button">¿Cómo funciona?</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-light mr-2" href="/root" role="button">Iniciar Sesión</a>
+          <a class="btn btn-outline-light mr-2" href="#" role="button">Iniciar Sesión</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-warning mr-2" href="/root" role="button">Registrarse</a>
+          <a class="btn btn-warning mr-2" href="#" role="button">Registrarse</a>
         </li>
       </ul>
     </div>
@@ -29,21 +30,25 @@
 <!--JUMBOTRON-->
 <div class="jumbotron jumbotron-fluid bg-success text-center mb-0" id="head">
   <div class="container">
-    <h1 class="display-4 text-white">Siembra un árbol <br>y comparte tu aporte <br>con el mundo</h1>
-    <br>
-    <p class="lead text-white">Arborizate es la aplicación web que te invita a registrar y compartir <br>tus siembras con todo el mundo. Reforesta, comparte y participa </p>
+    <div class="col-8 mx-auto">
+      <h1 class="display-4 text-white font-weight-bold">Siembra un árbol y comparte tu aporte con el mundo</h1>
+      <br>
+      <p class="lead text-white">Arborizate es la aplicación web que te invita a registrar y compartir tus siembras con todo el mundo. Reforesta, comparte y participa </p>
+    </div>
+
+
     <br>
     <br>
 
-    <button type="button" class="btn btn-light btn-lg mr-2 w-25">Conoce más</button>
-    <button type="button" class="btn btn-warning btn-lg ml-2 w-25">Participa</button>
+    <button type="button" class="btn btn-outline-light btn-lg mr-2 w-25 b-radius-50">Conoce más</button>
+    <button type="button" class="btn btn-success btn-lg ml-2 w-25 b-radius-50">Participa</button>
 
   </div>  
 </div><!--END JUMBOTRON-->
 
 <div class="container-fluid">
   <div class="row" id="stats">
-    <div class="col-12 text-center m-3 text-secondary">
+    <div class="col-12 text-center mt-3 mb-3 text-secondary">
       <h2 class="h1 mt-5">Así estamos creciendo</h2>
       <br>
       <p class="h5">Conoce nuestro impacto</p>
@@ -82,7 +87,7 @@
   </div>
 
   <div class="row" id="how_to_head">
-    <div class="col-12 text-center m-3 text-secondary">
+    <div class="col-12 text-center mt-3 mb-3 text-secondary">
       <h2 class="h1 mt-5">¿Cómo funciona?</h2>
       <br>
       <p class="h5">Estamos haciendo única la experiencia de ayudar al medio ambiente <br>y sembrando semillas de conciencia en todo el mundo</p>
