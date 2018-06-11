@@ -1,49 +1,5 @@
-<!--NAVBAR-->
-<nav class="navbar navbar-expand-md navbar-light fixed-top" id="nav">
-  <div class="container">
-    <a class="navbar-brand text-secondary" href="#">
-      <img src="<%= asset_path('logo_white.png') %>" class="img-fluid" alt="Logo">
-      <p class="h4 d-md-inline-block text-white ml-2" >Arborizate</p>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-      <span class="navbar-toggler-icon mb-0"></span> 
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="btn btn-link text-white mr-2" href="#stats" role="button">Impacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-link text-white mr-2" href="#how_to_head" role="button">¿Cómo funciona?</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-outline-light mr-2" href="#" role="button">Iniciar Sesión</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-warning mr-2" href="#" role="button">Registrarse</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav><!--END NAVBAR-->
-<!--JUMBOTRON-->
-<div class="jumbotron jumbotron-fluid bg-success text-center mb-0" id="head">
-  <div class="container">
-    <div class="col-8 mx-auto">
-      <h1 class="display-4 text-white font-weight-bold">Siembra un árbol y comparte tu aporte con el mundo</h1>
-      <br>
-      <p class="lead text-white">Arborizate es la aplicación web que te invita a registrar y compartir tus siembras con todo el mundo. Reforesta, comparte y participa </p>
-    </div>
-
-    <br>
-    <br>
-
-    <button type="button" class="btn btn-outline-light btn-lg mr-2 w-25 b-radius-50">Conoce más</button>
-    <button type="button" class="btn btn-success btn-lg ml-2 w-25 b-radius-50">Participa</button>
-
-  </div>  
-</div><!--END JUMBOTRON-->
+<%= render 'static_pages/navbar' %>
+<%= render 'static_pages/jumbotron' %>
 
 <div class="container-fluid">
   <div class="row" id="stats">
@@ -53,7 +9,7 @@
       <p class="h5">Conoce nuestro impacto</p>
     </div>
 
-    <div class="col-3 ml-auto">
+    <div class="col-sm-12 col-md-4 ml-auto">
       <div class="card border-0">
         <div class="card-body">
           <h5 class="card-title display-4 text-center text-secondary">1.250</h5>
@@ -61,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="col-3">
+    <div class="col-sm-12 col-md-4">
       <div class="card border-0">
         <div class="card-body">
           <h5 class="card-title display-4 text-center text-secondary">2.560</h5>
@@ -69,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="col-3 mr-auto">
+    <div class=" col-sm-12 col-md-4 mr-auto">
       <div class="card border-0">
         <div class="card-body">
           <h5 class="card-title display-4 text-center text-secondary">13.150</h5>
@@ -95,7 +51,7 @@
 
   <div class="row text-center mt-5 mb-5" id="how_to">
     <!--FEATURE 1-->
-    <div class="col-12 col-md-6 col-lg-3 ml-auto">
+    <div class="col-12 col-md-3 col-lg-3 ml-auto">
       <div class="card border-white p-1">
         <div class="card-body">
           <img class="img-fluid mb-3" src="<%= asset_path('Siembra_Img.png') %>" alt="feature 5">
@@ -105,7 +61,7 @@
       </div>
     </div><!-- END FEATURE 1-->
     <!--FEATURE 2-->
-    <div class="col-12 col-md-6 col-lg-3">
+    <div class="col-12 col-md-3 col-lg-3">
       <div class="card border-white p-1">
         <div class="card-body">
           <img class="img-fluid mb-3" src="<%= asset_path('Ingresa_Img.png') %>" alt="feature 1">
@@ -115,7 +71,7 @@
       </div>
     </div><!-- END FEATURE 2-->
     <!--FEATURE 3-->
-    <div class="col-12 col-md-6 col-lg-3 mr-auto">
+    <div class="col-12 col-md-3 col-lg-3 mr-auto">
       <div class="card border-white p-1">
         <div class="card-body">
           <img class="img-fluid mb-3" src="<%= asset_path('Comparte_Img.png') %>" alt="feature 3">
@@ -127,7 +83,7 @@
   </div><!--END FEATURES-->
 
   <div class="row" id="register mt-5 mb-5">
-    <div class="col-6 mt-5 mb-5 mx-auto">
+    <div class="col-12 col-md-6 mt-5 mb-5 mx-auto">
       <h2 class="h1 mb-5 text-center">Haz parte</h2>
       <form>
         <div class="form-group">
@@ -151,9 +107,5 @@
     </div>
   </div>
 
-  <footer class="m-3">
-    <div class="col-12 bg-dark mx-auto mt-5">
-      <h2 class="text-white">Arborizate</h2>
-    </div>
-  </footer>
+  <%= render 'static_pages/footer' %>
 </div>
