@@ -17,10 +17,10 @@
           <a class="btn btn-link text-white mr-2" href="#how_to_head" role="button">¿Cómo funciona?</a>
         </li>
         <li class="nav-item">
-          <a class="btn btn-outline-light mr-2" href="#" role="button">Iniciar Sesión</a>
+          <%= link_to "Iniciar Sesión", new_user_session_path, class: "btn btn-outline-light mr-2", role: "button" %>
         </li>
         <li class="nav-item">
-          <a class="btn btn-warning mr-2" href="#register" role="button">Registrarse</a>
+          <%= link_to "Registrarse", new_user_registration_path, class: "btn btn-warning mr-2", role: "button" %>
         </li>
       </ul>
     </div>
